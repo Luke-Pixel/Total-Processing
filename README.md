@@ -7,6 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Project Summary
+
+Project Summary:
+
+Laravel project created using composer and PHP artisan, to run the project use ‘php artisan serve’ command inside the project directory. I have only tested and developed this on my local machine with PHP so let me know if you have any problems on your machine. 
+
+Technologies used:
+
+Laravel & Composer: A new library that I have not previously used before using MVC, I found it intriguing to learn and was able to implement what I needed after reading through the documentation and watching some YouTube tutorials, my previous experience with PHP and Java Spring boot also helped along the way. The most difficult task was getting my environment set up with Composer, PHP and artisan however after getting things set up, I quickly got up to speed with the work.
+
+MySQL: A MySQL database is used as a data store, the schema name is tp-db and the current credentials are the default ones used with my install, you may need to change the password and username in .env to connect to MySQL
+COPYandPay API: I enjoyed using the API provided, the documentation steps you through all the steps you need to start creating payments and I was able to quickly get my application up and running with test payments and refunds.
+Tailwind CSS: Tailwind CSS allowed me to quicky build the user interface while allowing me to ensure the core components of the project were implemented quickly.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

@@ -26,11 +26,21 @@ class RegisterController extends Controller
             'email' => 'required|email|max:255',
             'password' => 'required|confirmed'
         ]);
+            
+        //check user exists
+        $users = User::select("*")
+                        ->where("email", "=", strtolower($request->email))
+                        ->get();
+        if($users->count()){
+            return back()->with('status', 'User alread exists');
+        }
+
+        
 
         //store new user
         User::create([
             'name' => $request->name,
-            'email' => $request->email,
+            'email' => strtolower($request->email),
             'password' =>Hash::make($request->password)
 
         ]);

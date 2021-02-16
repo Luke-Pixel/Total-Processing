@@ -5,6 +5,14 @@
         <div class='w-6/12 bg-white p-6 rounded-lg max-w-sm'>
             <form   action="{{ route('register') }}" method='post'>
                 @csrf
+                <!--  display error if user exists-->
+                @if (session('status'))
+                    <div class ="bg-red-500 p-4 rounded-lg mb-6 text-white text-center">
+                        {{session('status')}}
+                    </div>
+                @endif
+
+                <!--Firm to enter new user details-->
                 <div class='mb-4'>
                     <label for='name' class='sr-only'>Name</label>
                     <input type='text' name='name' id='name' placeholder='Your Name'
