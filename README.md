@@ -19,7 +19,9 @@ Laravel & Composer: A new library that I have not previously used before using M
 
 MySQL: A MySQL database is used as a data store, the schema name is tp-db and the current credentials are the default ones used with my install, you may need to change the password and username in .env to connect to MySQL
 COPYandPay API: I enjoyed using the API provided, the documentation steps you through all the steps you need to start creating payments and I was able to quickly get my application up and running with test payments and refunds.
-Tailwind CSS: Tailwind CSS allowed me to quicky build the user interface while allowing me to ensure the core components of the project were implemented quickly.
+Tailwind 
+
+CSS: Tailwind CSS allowed me to quicky build the user interface while allowing me to ensure the core components of the project were implemented quickly.
 
 
 ## About Laravel
